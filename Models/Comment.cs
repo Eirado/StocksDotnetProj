@@ -1,7 +1,12 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace StocksDotnetProj.Models;
 
+[Table("comments")]
 public class Comment
 { 
+    [Key]
     public int Id { get; set; }
     
     public string Title { get; set; } = string.Empty;
