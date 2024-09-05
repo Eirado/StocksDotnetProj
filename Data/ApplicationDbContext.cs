@@ -1,13 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using api.Models;
+using StocksDotnetProj.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace api.Data
+namespace StocksDotnetProj.Data
 {
     public class ApplicationDBContext : IdentityDbContext<AppUser>
     {

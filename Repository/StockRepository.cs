@@ -9,12 +9,12 @@ using StocksDotnetProj.Interfaces;
 using StocksDotnetProj.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace api.Repository
+namespace StocksDotnetProj.Repository
 {
     public class StockRepository : IStockRepository
     {
-        private readonly ApplicationDBContext _context;
-        public StockRepository(ApplicationDBContext context)
+        private readonly ApplicationDbContext _context;
+        public StockRepository(ApplicationDbContext context)
         {
             _context = context;
         }

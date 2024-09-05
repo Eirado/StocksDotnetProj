@@ -17,9 +17,9 @@ namespace StocksDotnetProj.Controllers
     [ApiController]
     public class StockController : ControllerBase
     {
-        private readonly ApplicationDBContext _context;
+        private readonly ApplicationDbContext _context;
         private readonly IStockRepository _stockRepo;
-        public StockController(ApplicationDBContext context, IStockRepository stockRepo)
+        public StockController(ApplicationDbContext context, IStockRepository stockRepo)
         {
             _stockRepo = stockRepo;
             _context = context;
